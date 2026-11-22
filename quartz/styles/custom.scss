@@ -1,3 +1,7 @@
 @use "./variables.scss" as *;
+footer > p {
+  display: none !important;
+}
+
 
 // put your custom CSS here!
