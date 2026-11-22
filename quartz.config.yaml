@@ -208,11 +208,13 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        "ORCID: 0009-0009-7030-8151": https://orcid.org
+        "Zenodo Archive": https://zenodo.org
+        "© 2026 Vivien Yor • VSCI Laboratory. All Rights Reserved (CC BY 4.0)": https://creativecommons.org
     layout:
       position: footer
       priority: 50
+
   - source: "@quartz-community/recent-notes"
     enabled: false
   - source: "@quartz-community/spacer"
