@@ -24,6 +24,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Generate Publications Feed
+        run: python3 update_feed.py
       - name: Install Dependencies
         run: npm ci
       - name: Install Quartz Plugins
