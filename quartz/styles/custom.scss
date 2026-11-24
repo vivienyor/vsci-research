@@ -5,3 +5,33 @@ footer > p {
 
 
 // put your custom CSS here!
+.vsci-filter-box {
+  margin: 20px 0;
+}
+.vsci-filter-box input[type="radio"] {
+  display: none;
+}
+.vsci-filter-box label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 12px;
+  margin: 0 6px 8px 0;
+  border-radius: 6px;
+  border: 1px solid var(--gray);
+  font-size: 0.9em;
+  user-select: none;
+}
+.vsci-filter-box input[type="radio"]:checked + label {
+  font-weight: bold;
+  background: var(--highlight);
+  border-color: var(--secondary);
+}
+
+/* Логика фильтрации без JavaScript */
+#flt-en:checked ~ #pub-list .pub-item:not(.lang-en),
+#flt-ru:checked ~ #pub-list .pub-item:not(.lang-ru),
+#flt-fr:checked ~ #pub-list .pub-item:not(.lang-fr),
+#flt-es:checked ~ #pub-list .pub-item:not(.lang-es) {
+  display: none !important;
+}
+
